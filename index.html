@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOGO Offer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>YAY! It's BOGO</h2>
+        
+        <div class="offer-box">
+            <input type="radio" name="offer" value="10" onclick="updatePrice(10)"> 1 Unit <span>10% Off</span>
+            <p class="price">$10.00 USD <del>$24.00 USD</del></p>
+        </div>
+        
+        <div class="offer-box">
+            <div class="most-popular">MOST POPULAR</div><br>
+            <input type="radio" name="offer" value="18" onclick="updatePrice(18)"> 2 Units <span>20% Off</span>
+            <p class="price">$18.00 USD <del>$24.00 USD</del></p>
+            <div>
+                <label>#1 Size:</label>
+                <select><option>S</option><option>M</option><option>L</option></select>
+                <label>Colour:</label>
+                <select><option>Black</option><option>Red</option><option>Blue</option></select>
+            </div>
+            <div>
+                <label>#2 Size:</label>
+                <select><option>S</option><option>M</option><option>L</option></select>
+                <label>Colour:</label>
+                <select><option>Black</option><option>Red</option><option>Blue</option></select>
+            </div>
+        </div>
+        
+        <div class="offer-box">
+            <input type="radio" name="offer" value="24" onclick="updatePrice(24)"> 3 Units <span>30% Off</span>
+            <p class="price">$24.00 USD <del>$24.00 USD</del></p>
+        </div>
+        
+        <p>Free Delivery</p>
+        <p>Total: <span id="totalPrice">$0.00 USD</span></p>
+        
+        <button class="add-to-cart">+ Add to Cart</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
